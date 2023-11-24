@@ -4,3 +4,16 @@ html,
 body {
     font-family: 'Inter', sans-serif;
 }
+
+body {
+    background-color: #F1F0CC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+}
