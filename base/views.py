@@ -1,9 +1,9 @@
-from django.http import HttpResponse
-from django.db.models import Sum
+from django.views.decorators.cache import cache_page
 from django.shortcuts import render
 
 from base.models import PageVisits
 
+@cache_page(60 * 15)  # Cache for 15 minutes (in seconds)
 def index(request):
     view_name = request.resolver_match.view_name
     page, created = PageVisits.objects.get_or_create(page_name=view_name)
