@@ -19,21 +19,86 @@
     <link rel="canonical" href="https://rwebley.pages.dev/">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg shadow-sm p-3 mb-5 fixed-top bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand h1" href="/">RW</a>
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="#home">
+                <img src="" alt=""> RW
+            </a>
+            <!-- Toggler/collapsible Button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link uppercase" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <a href="#contact" class="cta-button ml-3">Hire Me</a>
             </div>
         </div>
     </nav>
-    <section class="container-fluid coming-soon">
-        <h1 class="lead display-6">The Portfolio is coming soon <span>✊🏾</span></h1>
-        <br><br>
+    
+    <section class="container-fluid content-section" id="home">
+        <div class="row">
+            <div class="col-md-8 mx-auto text-center">
+                <h1 class="display-4">Portfolio</h1>
+                <p class="lead">Explore my projects and skills.</p>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="container-fluid content-section">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h1 class="display-4">About Me</h1>
+                <p class="lead"></p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="container-fluid content-section">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h1 class="display-4">My Projects</h1>
+                <p class="lead"></p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="container-fluid contact-section">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h2 class="display-4 text-center mb-5">Contact Me</h2>
+                <form class="contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
